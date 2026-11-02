@@ -282,7 +282,7 @@ int main() {
 </map>
 <h3>Send me a message</h3>
 
-<form action="thank-you.html" method="get">
+<form action="thank-you.html" method="post" enctype="multipart/form-data">
     <fieldset>
         <legend>Your Details</legend>
 
@@ -297,7 +297,7 @@ int main() {
     <legend>Project Details</legend>
 
     <label for="phone">Phone (optional):</label>
-    <input type="text" id="phone" name="phone" required
+    <input type="text" id="phone" name="phone"
            pattern="0[79][0-9]{8}"
            title="10 digits starting with 09 or 07">
     <br><br>
