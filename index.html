@@ -124,7 +124,7 @@ onclick="document.getElementById('hireDialog').showModal()">
 
 <p>
     <label for="lvl-css">CSS</label>
-    <meter id="lvl-css" value="0.6" min="0" max="1">70%</meter>
+    <meter id="lvl-css" value="0.6" min="0" max="1">60%</meter>
 </p>
 
 <p>
@@ -140,8 +140,13 @@ onclick="document.getElementById('hireDialog').showModal()">
 <p>
     <label for="lvl-python">Python</label>
     <meter id="lvl-python" value="0.4" min="0" max="1"
-           low="0.3" high="0.7" optimum="1">70%</meter>
+           low="0.3" high="0.7" optimum="1">40%</meter>
 </p>
+<h3>My Skills Chart</h3>
+
+<canvas id="skillChart" width="300" height="150">
+    A chart showing my skill levels.
+</canvas>
 <h3>My Learning Roadmap</h3>
 
 <ol type="1">
@@ -467,6 +472,29 @@ int main() {
     ctx.textAlign = "center";
     ctx.textBaseline = "middle";
     ctx.fillText("DM", 60, 62);
+    const chart = document.getElementById('skillChart');
+const chartCtx = chart.getContext('2d');
+
+const skills = [
+    { name: "HTML", value: 0.8 },
+    { name: "CSS", value: 0.6 },
+    { name: "JS", value: 0.2 },
+    { name: "C++", value: 0.8 },
+    { name: "Python", value: 0.4 }
+];
+
+chartCtx.fillStyle = "black";
+chartCtx.font = "12px Arial";
+chartCtx.textAlign = "center";
+
+skills.forEach((skill, i) => {
+    const height = skill.value * 120;
+    const x = 20 + i * 55;
+    const y = 130 - height;
+
+    chartCtx.fillRect(x, y, 30, height);
+    chartCtx.fillText(skill.name, x + 15, 145);
+});
 </script>
 </html>
 
