@@ -15,6 +15,10 @@ developer, HTML">
 
 <header>
     <h1>Hello, I am Deborah Mesfin</h1>
+    <canvas id="logo" width="120" height="120" style="display: block; margin-bottom: 15px;">
+    Deborah Mesfin logo
+</canvas>
+
 
     <img src="images/profile.jpg"
          alt="My profile photo"
@@ -443,6 +447,27 @@ int main() {
 <p>Last updated: <time datetime="2026-11-05">3 November 2026</time></p>
 </footer> 
 </body>
+<script>
+    const canvas = document.getElementById('logo');
+    const ctx = canvas.getContext('2d');
+
+    // Blue square background
+    ctx.fillStyle = "black";
+    ctx.fillRect(0, 0, 120, 120);
+
+    // White circle
+    ctx.beginPath();
+    ctx.arc(60, 60, 45, 0, 2 * Math.PI);
+    ctx.fillStyle = "white";
+    ctx.fill();
+
+    // Your initials
+    ctx.fillStyle = "black";
+    ctx.font = "bold 36px Arial";
+    ctx.textAlign = "center";
+    ctx.textBaseline = "middle";
+    ctx.fillText("DM", 60, 62);
+</script>
 </html>
 
 
