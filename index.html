@@ -22,7 +22,22 @@ developer, HTML">
          height="220">
 
     <p>I am a Software Engineering student and this is my portfolio website.</p>
+<button type="button"
+onclick="document.getElementById('hireDialog').showModal()">
+    Hire Me
+</button>
 
+<dialog id="hireDialog">
+    <h2>Available for Internships</h2>
+    <p>I am available for internships and freelance web projects.</p>
+
+    <p><a href="#contact">Send me a message</a></p>
+
+    <button type="button"
+    onclick="document.getElementById('hireDialog').close()">
+        Close
+    </button>
+</dialog>
     <nav>
         <a href="#about">About</a> |
         <a href="#skills">Skills</a> |
