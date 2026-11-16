@@ -215,7 +215,7 @@ h2 + p::first-line {
     font-weight: 600;
 }
 main {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 0 1rem;
 }
@@ -232,6 +232,10 @@ header img {
 header {
     text-align: center;
     padding: 2rem 1rem;
+ background-image: url("../images/pattern.png"),
+                      linear-gradient(135deg, #1f5fa8, #0b2d55);
+    
+                      color: white;   
 }
 section,
 aside {
