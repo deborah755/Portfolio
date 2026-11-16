@@ -88,8 +88,16 @@ nav a {
     font-weight: 600;
     text-transform: uppercase;
     font-size: 0.9rem;
+    display: inline-block;
+padding: 0.5rem 1rem;
+margin: 0.25rem;
+border: 2px solid #C19A6B;
 }
 
+label[for^="lvl"] {
+    display: inline-block;
+    width: 7rem;
+}
 
 .card > p {
     color: #5a6b7d;
@@ -192,6 +200,16 @@ main {
     max-width: 900px;
     margin: 0 auto;
     padding: 0 1rem;
+}
+#logo,
+header img {
+    display: block;
+    margin: 0 auto 1rem;
+}
+
+header img {
+    border: 4px solid white;
+    border-radius: 50%;
 }
 header {
     text-align: center;
