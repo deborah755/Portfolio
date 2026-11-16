@@ -118,3 +118,31 @@ abbr[title] {
     text-transform: uppercase;
     letter-spacing: 1px;
 }
+a:hover {
+    color: #C19A6B;
+    text-decoration: underline;
+}
+/* ---------- Link icons ---------- */
+a[href^="https"]::after {
+    content: " ↗";
+}
+
+a[href^="mailto"]::before {
+    content: " ✉ ";
+}
+
+a[href^="tel"]::before {
+    content: " ☎ ";
+}
+
+a[download]::before {
+    content: " ⬇ ";
+}
+h2::before {
+    content: "// ";
+    color: hsl(37, 91%, 55%);
+}
+
+h2 + p::first-line {
+    font-weight: 600;
+}
