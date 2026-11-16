@@ -4,6 +4,9 @@
    Accent   hsl(37, 91%, 55%)   (orange)
    Light    #f4f6f9   (page background)
 */
+* {
+    box-sizing: border-box;
+}
 body {
     background-color: #F5EFE6;
     color: #3E3028; 
@@ -13,6 +16,7 @@ body {
   font-optical-sizing: auto;
   font-size: 1rem;
   line-height: 1.5;
+  margin: 0;
 }
 h1, h2, h3 {
     line-height: 1.2;
@@ -183,4 +187,18 @@ h2::before {
 
 h2 + p::first-line {
     font-weight: 600;
+}
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+header {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+footer {
+    text-align: center;
+    padding: 1.5rem 1rem;
+    margin-top: 3rem;
 }
