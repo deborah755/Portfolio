@@ -85,6 +85,7 @@ margin: 0.5rem 0.25rem 0 0;
     padding: 1rem 1.5rem;
 margin: 1rem 0;
 border: 1px solid #d5dde8;
+border-left: 4px solid #FF8C00;
 }
 .card img,
 video {
@@ -214,7 +215,7 @@ h2 + p::first-line {
     font-weight: 600;
 }
 main {
-    max-width: 900px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 1rem;
 }
@@ -249,4 +250,24 @@ fieldset {
     margin: 0 0 1rem;
     padding: 1rem;
     border: 2px solid #d5dde8;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 1rem 0;
+    background-color: white;
+}
+
+th, td {
+    border: 1px solid #c5d0de;
+    padding: 0.5rem 0.75rem;
+}
+
+caption {
+    font-weight: 600;
+    padding: 0.5rem;
+}
+
+ul ul {
+    list-style-type: square;
 }
