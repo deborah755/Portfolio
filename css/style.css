@@ -118,15 +118,53 @@ abbr[title] {
     text-transform: uppercase;
     letter-spacing: 1px;
 }
+
+a:link {
+    color: #FF8C00;
+}
+
+a:visited {
+     color: #FF8C00;
+}
+
 a:hover {
-    color: #C19A6B;
+     color: #E67300;
     text-decoration: underline;
 }
-/* ---------- Link icons ---------- */
+
+a:active {
+    color: #CC5500;
+}
+
+
+.btn:hover {
+    background-color: #8B5E3C;
+}
+
+.btn-secondary:hover {
+    background-color: #3E3028;
+}
+
+
+
+ol li:first-child {
+    font-weight: 600;
+}
+
+
+tbody tr:nth-child(even) {
+    background-color: #E5D5C3;
+}
+.card:hover {
+    background-color: #f8d39d;
+}
+
 a[href^="https"]::after {
     content: " ↗";
 }
-
+a[href$=".html"]::after {
+    content: " →";
+}
 a[href^="mailto"]::before {
     content: " ✉ ";
 }
