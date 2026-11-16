@@ -60,7 +60,7 @@ onclick="document.getElementById('hireDialog').showModal()">
     <em>really</em> interested in creativity and technology.
     I <em>enjoy</em> learning new skills, exploring ideas,
     and turning them into meaningful projects.
-    My goal is to <mark>combine creativity and technical knowledge</mark>
+    My goal is to <u>combine creativity and technical knowledge</u>
     to create useful solutions.
 </p>
 
@@ -135,7 +135,7 @@ onclick="document.getElementById('hireDialog').showModal()">
 <p>
     <label for="lvl-c++">C++</label>
     <meter id="lvl-c++" value="0.8" min="0" max="1"
-           low="0.3" high="0.7" optimum="1">20%</meter>
+           low="0.3" high="0.7" optimum="1">80%</meter>
 </p>
 <p>
     <label for="lvl-python">Python</label>
@@ -217,7 +217,7 @@ int main() {
     <h3>BSc in Software Engineering</h3>
     <p>
     <abbr title="Addis Ababa Science and Technology University">AASTU</abbr>,
-    <time datetime="2023-09">October 2023</time> – present
+    <time datetime="2023-10">October 2023</time> – present
 </p>
 <p>
     <label for="degree">Degree progress:</label>
@@ -449,24 +449,20 @@ int main() {
 </main>
 <footer> 
     <p>&copy; 2026 Deborah Mesfin. All rights reserved.</p>
-<p>Last updated: <time datetime="2026-11-05">3 November 2026</time></p>
-</footer> 
-</body>
+<p>Last updated: <time datetime="2026-11-03">3 November 2026</time></p>
+</footer>
 <script>
     const canvas = document.getElementById('logo');
     const ctx = canvas.getContext('2d');
 
-    // Blue square background
     ctx.fillStyle = "black";
     ctx.fillRect(0, 0, 120, 120);
 
-    // White circle
     ctx.beginPath();
     ctx.arc(60, 60, 45, 0, 2 * Math.PI);
     ctx.fillStyle = "white";
     ctx.fill();
 
-    // Your initials
     ctx.fillStyle = "black";
     ctx.font = "bold 36px Arial";
     ctx.textAlign = "center";
@@ -495,7 +491,8 @@ skills.forEach((skill, i) => {
     chartCtx.fillRect(x, y, 30, height);
     chartCtx.fillText(skill.name, x + 15, 145);
 });
-</script>
+</script> 
+</body>
 </html>
 
 
