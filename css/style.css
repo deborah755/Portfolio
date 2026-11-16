@@ -1,0 +1,38 @@
+/* Palette
+   Primary  #1f5fa8   (blue, same as the logo)
+   Dark     #22313f   (text)
+   Accent   hsl(37, 91%, 55%)   (orange)
+   Light    #f4f6f9   (page background)
+*/
+body {
+    background-color: #e1e1a2; 
+    color:#22313f; 
+    
+
+  font-family: "Agrave Pro", cursive;
+  font-optical-sizing: auto;
+  font-size: 1rem;
+  line-height: 1.5;
+};
+
+h1 {
+    color: #022e61;                
+}
+h2 {
+    color: rgb(128, 53, 18);        
+}
+h3 {
+    color: hsl(212, 77%, 47%);      
+}
+mark {
+    background-color: rgba(245, 166, 35, 0.35);   
+}
+html {
+    font-size: 20px;   /* 1rem = 16px everywhere */
+}
+h1 { font-size: 2.5rem; }   /* 40px */
+h2 { font-size: 1.8rem; }   /* about 29px */
+h3 { font-size: 1.2rem; }   /* about 19px */
+
+
+
