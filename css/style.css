@@ -72,6 +72,8 @@ html {
     font-size: 1rem;
     border: none;
     cursor: pointer;
+    padding: 0.6rem 1.2rem;
+margin: 0.5rem 0.25rem 0 0;
 }
 
 .btn-secondary {
@@ -80,6 +82,19 @@ html {
 
 .card {
     background-color: white;
+    padding: 1rem 1.5rem;
+margin: 1rem 0;
+border: 1px solid #d5dde8;
+}
+.card img,
+video {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+iframe {
+    display: block;
+    max-width: 100%;
 }
 #contact {
     background-color: #e8eef6;
@@ -116,10 +131,12 @@ input[type="email"],
 input[type="number"],
 input[type="date"],
 select,
+
 textarea {
     border: 2px solid #1f5fa8;
     font-family: inherit;
     font-size: 1rem;
+    padding: 0.4rem;
 }
 abbr[title] {
     cursor: help;
@@ -215,8 +232,21 @@ header {
     text-align: center;
     padding: 2rem 1rem;
 }
+section,
+aside {
+    margin: 2rem 0;
+    padding: 1.5rem;
+}
+aside {
+    border-left: 6px solid #FF8C00;
+}
 footer {
     text-align: center;
     padding: 1.5rem 1rem;
     margin-top: 3rem;
+}
+fieldset {
+    margin: 0 0 1rem;
+    padding: 1rem;
+    border: 2px solid #d5dde8;
 }
