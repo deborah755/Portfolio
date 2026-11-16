@@ -275,3 +275,26 @@ caption {
 ul ul {
     list-style-type: square;
 }
+/* ---------- Header Text ---------- */
+header h1 {
+    color: #3E3028;
+}
+
+header .tagline {
+    color: rgba(62, 48, 40, 0.85);
+}
+
+header nav a:link,
+header nav a:visited {
+    color: #FF8C00;
+    border-color: #C19A6B;
+}
+
+header nav a:hover {
+    background-color: #F5EFE6;
+}
+
+header .btn {
+    background-color: #C19A6B;
+    color: #3E3028;
+}
